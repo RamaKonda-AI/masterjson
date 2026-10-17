@@ -1,0 +1,908 @@
+{
+  "version": 2,
+  "name": "My explainer video — Master Scene",
+  "durationMs": 30000,
+  "settings": {
+    "typewriterCps": 16,
+    "autoScroll": true,
+    "cameraEase": "easeInOut"
+  },
+  "physics": {
+    "enabled": true,
+    "gravityY": 1,
+    "fanForce": 1.15,
+    "paperFriction": 0.56,
+    "paperAirResistance": 0.025,
+    "paperRestitution": 0.18
+  },
+  "recording": {
+    "preset": "youtube-1080p",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "videoBitrate": 8000000,
+    "layout": "studio",
+    "includeWhiteboard": true,
+    "studioBranding": true,
+    "showPresenterNames": true,
+    "showRecordingIndicator": false
+  },
+  "controls": {
+    "stopButton": {
+      "visible": true,
+      "label": "STOP NOW",
+      "interruptCurrentActivity": true
+    }
+  },
+  "characterCount": 3,
+  "visibleCharacters": [
+    "left",
+    "right",
+    "center"
+  ],
+  "characters": {
+    "left": {
+      "name": "Presenter One",
+      "hairStyle": "wavy",
+      "hairColor": "#412447",
+      "skinColor": "#d99b78",
+      "shirtColor": "#655add",
+      "pantsColor": "#27334b",
+      "glasses": false,
+      "faceStyle": "chibi",
+      "eyeStyle": "anime",
+      "eyeColor": "#3a2929",
+      "noseStyle": "soft",
+      "eyebrowStyle": "natural",
+      "facialHair": "none",
+      "accessory": "none",
+      "facing": 1,
+      "voiceAsset": null
+    },
+    "right": {
+      "name": "Presenter Two",
+      "hairStyle": "curly",
+      "hairColor": "#202632",
+      "skinColor": "#b97853",
+      "shirtColor": "#55b7a8",
+      "pantsColor": "#293752",
+      "glasses": true,
+      "faceStyle": "round",
+      "eyeStyle": "round",
+      "eyeColor": "#2b2522",
+      "noseStyle": "straight",
+      "eyebrowStyle": "natural",
+      "facialHair": "none",
+      "accessory": "none",
+      "facing": -1,
+      "voiceAsset": null
+    },
+    "center": {
+      "name": "Host Alex",
+      "hairStyle": "short",
+      "hairColor": "#202632",
+      "skinColor": "#d99b78",
+      "shirtColor": "#3b82f6",
+      "pantsColor": "#293752",
+      "glasses": true,
+      "faceStyle": "chibi",
+      "eyeStyle": "round",
+      "eyeColor": "#3f2b25",
+      "eyebrowStyle": "natural",
+      "noseStyle": "soft",
+      "facialHair": "none",
+      "accessory": "none",
+      "facing": 1,
+      "standing": true,
+      "voiceAsset": null
+    }
+  },
+  "background": {
+    "preset": "studio",
+    "visible": true,
+    "colors": [
+      "#e9effa",
+      "#f7eee4"
+    ]
+  },
+  "materials": {
+    "table": true,
+    "computer": true,
+    "papers": true,
+    "penHolder": true,
+    "fan": true,
+    "chairs": true,
+    "tableColor": "#a77954"
+  },
+  "whiteboard": {
+    "title": "KEY POINTS",
+    "text": "Write the explanation here.\n\nImportant phrases can be highlighted with timeline actions.",
+    "typingCps": 16,
+    "sound": true,
+    "highlights": []
+  },
+  "audio": {
+    "backgroundAsset": null,
+    "backgroundVolume": 0.14
+  },
+  "tts": {
+    "provider": "kokoro-js",
+    "endpoint": "/api/tts/kokoro",
+    "voice": "af_heart",
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "at": 0,
+      "type": "camera",
+      "target": "both",
+      "duration": 700
+    },
+    {
+      "at": 0,
+      "type": "reaction",
+      "character": "left",
+      "reaction": "happy",
+      "duration": 1600
+    },
+    {
+      "at": 300,
+      "type": "reaction",
+      "character": "right",
+      "reaction": "sayHi",
+      "duration": 1400
+    },
+    {
+      "at": 1400,
+      "type": "speak",
+      "character": "left",
+      "duration": 4000,
+      "volume": 1
+    },
+    {
+      "at": 2000,
+      "type": "whiteboard",
+      "action": "open"
+    },
+    {
+      "at": 2200,
+      "type": "whiteboardType",
+      "text": "Important concept:\nBindings first, values when assigned.",
+      "cps": 16,
+      "sound": true
+    },
+    {
+      "at": 3100,
+      "type": "highlight",
+      "target": "Important concept",
+      "style": "marker",
+      "color": "#ffe16a",
+      "duration": 1800
+    },
+    {
+      "at": 5000,
+      "type": "customize",
+      "character": "right",
+      "property": "faceStyle",
+      "value": "round"
+    },
+    {
+      "at": 7000,
+      "type": "fan",
+      "on": true,
+      "duration": 1800
+    },
+    {
+      "at": 9000,
+      "type": "whiteboard",
+      "action": "close"
+    },
+    {
+      "at": 10000,
+      "type": "camera",
+      "target": "right",
+      "zoom": 1.5,
+      "focusY": 0.5,
+      "duration": 900
+    },
+    {
+      "at": 12000,
+      "type": "reaction",
+      "character": "right",
+      "reaction": "correct",
+      "duration": 1800
+    },
+    {
+      "at": 18000,
+      "type": "stop"
+    }
+  ],
+  "schemaHelp": {
+    "recordingProfiles": [
+      "youtube-720p",
+      "youtube-1080p",
+      "youtube-4k",
+      "youtube-shorts",
+      "instagram-reels",
+      "instagram-feed",
+      "instagram-square"
+    ],
+    "faceStyles": [
+      "oval",
+      "round",
+      "soft",
+      "angular",
+      "square",
+      "heart",
+      "chibi"
+    ],
+    "eyeStyles": [
+      "almond",
+      "round",
+      "hooded",
+      "anime"
+    ],
+    "hairStyles": [
+      "wavy",
+      "short",
+      "curly",
+      "bob",
+      "long",
+      "bun",
+      "ponytail",
+      "braids",
+      "undercut",
+      "afro",
+      "bald"
+    ],
+    "noseStyles": [
+      "soft",
+      "straight",
+      "button"
+    ],
+    "facialHairStyles": [
+      "none",
+      "mustache",
+      "beard",
+      "goatee"
+    ],
+    "reactions": [
+      "neutral",
+      "sayHi",
+      "sayBye",
+      "angry",
+      "confused",
+      "thinking",
+      "happy",
+      "shy",
+      "correct",
+      "wrong",
+      "fear",
+      "shocked"
+    ],
+    "cameraTargets": [
+      "left",
+      "right",
+      "both"
+    ],
+    "cameraParameters": {
+      "zoomRecommendedRange": [
+        1.35,
+        1.6
+      ],
+      "focusYRecommendedRange": [
+        0.2,
+        0.75
+      ],
+      "example": {
+        "at": 12000,
+        "type": "camera",
+        "target": "left",
+        "zoom": 1.5,
+        "focusY": 0.375,
+        "duration": 900
+      }
+    },
+    "highlightStyles": [
+      "marker",
+      "underline",
+      "box",
+      "pulse",
+      "spotlight",
+      "arrow",
+      "sweep"
+    ],
+    "timelineActionExamples": {
+      "reaction": {
+        "at": 1000,
+        "type": "reaction",
+        "character": "left",
+        "reaction": "thinking",
+        "duration": 1800
+      },
+      "camera": {
+        "at": 2000,
+        "type": "camera",
+        "target": "right",
+        "duration": 850
+      },
+      "speak": {
+        "at": 3000,
+        "type": "speak",
+        "character": "left",
+        "duration": 3500,
+        "volume": 1
+      },
+      "whiteboard": {
+        "at": 4000,
+        "type": "whiteboard",
+        "action": "open"
+      },
+      "whiteboardType": {
+        "at": 4500,
+        "type": "whiteboardType",
+        "text": "Text to type",
+        "cps": 16,
+        "sound": true
+      },
+      "highlight": {
+        "at": 5200,
+        "type": "highlight",
+        "target": "Text to focus",
+        "style": "marker",
+        "color": "#ffe16a",
+        "duration": 1800
+      },
+      "customize": {
+        "at": 7000,
+        "type": "customize",
+        "character": "left",
+        "property": "faceStyle",
+        "value": "chibi"
+      },
+      "fan": {
+        "at": 8000,
+        "type": "fan",
+        "on": true,
+        "duration": 2000
+      },
+      "stop": {
+        "at": 15000,
+        "type": "stop"
+      }
+    },
+    "notes": [
+      "Upload a voice clip in the studio and set its returned assetId as characters.left.voiceAsset or characters.right.voiceAsset. A speak action may override it with assetId.",
+      "A scheduled stop truncates the render at that timestamp. Stop Render cancels the server job.",
+      "The server-side MP4 pipeline uses Canvas and FFmpeg to encode H.264 video and AAC audio.",
+      "Highlight targets must match phrases in the currently visible whiteboard text; schedule highlights after the phrase has been typed.",
+      "Background audio uses an uploaded audio asset ID and loops to the scene duration. Keep backgroundVolume low under narration, commonly 0.08–0.18.",
+      "characterCount supports 1 or 2 presenters; visibleCharacters selects left and/or right.",
+      "This renderer creates stylized vector cartoons, not photorealistic avatars or motion-capture output."
+    ]
+  },
+  "parameterExamples": {
+    "description": "Reference examples for scene parameters and supported timeline actions. This section is documentation metadata; the renderer may ignore it.",
+    "topLevel": {
+      "version": 2,
+      "name": "Example explainer",
+      "durationMs": 30000,
+      "characterCount": 1,
+      "visibleCharacters": [
+        "left"
+      ]
+    },
+    "settings": {
+      "typewriterCps": 16,
+      "autoScroll": true,
+      "cameraEase": "easeInOut"
+    },
+    "physics": {
+      "enabled": true,
+      "gravityY": 1,
+      "fanForce": 1.15,
+      "paperFriction": 0.56,
+      "paperAirResistance": 0.025,
+      "paperRestitution": 0.18
+    },
+    "recording": {
+      "presetExamples": [
+        {
+          "preset": "youtube-720p",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "preset": "youtube-1080p",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "preset": "youtube-4k",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "preset": "youtube-shorts",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "preset": "instagram-reels",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "preset": "instagram-feed",
+          "width": 1080,
+          "height": 1350
+        },
+        {
+          "preset": "instagram-square",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "fullExample": {
+        "preset": "youtube-1080p",
+        "width": 1920,
+        "height": 1080,
+        "fps": 30,
+        "videoBitrate": 8000000,
+        "layout": "studio",
+        "includeWhiteboard": true,
+        "studioBranding": true,
+        "showPresenterNames": true,
+        "showRecordingIndicator": false
+      }
+    },
+    "controls": {
+      "stopButton": {
+        "visible": true,
+        "label": "STOP NOW",
+        "interruptCurrentActivity": true
+      }
+    },
+    "character": {
+      "name": "Presenter Example",
+      "hairStyle": "wavy",
+      "hairColor": "#412447",
+      "skinColor": "#d99b78",
+      "shirtColor": "#655add",
+      "pantsColor": "#27334b",
+      "glasses": false,
+      "faceStyle": "chibi",
+      "eyeStyle": "anime",
+      "eyeColor": "#3a2929",
+      "noseStyle": "soft",
+      "eyebrowStyle": "natural",
+      "facialHair": "none",
+      "accessory": "none",
+      "facing": 1,
+      "voiceAsset": "<uploaded-audio-assetId>"
+    },
+    "characterAllowedValues": {
+      "faceStyle": [
+        "oval",
+        "round",
+        "soft",
+        "angular",
+        "square",
+        "heart",
+        "chibi"
+      ],
+      "eyeStyle": [
+        "almond",
+        "round",
+        "hooded",
+        "anime"
+      ],
+      "hairStyle": [
+        "wavy",
+        "short",
+        "curly",
+        "bob",
+        "long",
+        "bun",
+        "ponytail",
+        "braids",
+        "undercut",
+        "afro",
+        "bald"
+      ],
+      "noseStyle": [
+        "soft",
+        "straight",
+        "button"
+      ],
+      "facialHair": [
+        "none",
+        "mustache",
+        "beard",
+        "goatee"
+      ],
+      "reactions": [
+        "neutral",
+        "sayHi",
+        "sayBye",
+        "angry",
+        "confused",
+        "thinking",
+        "happy",
+        "shy",
+        "correct",
+        "wrong",
+        "fear",
+        "shocked"
+      ]
+    },
+    "background": {
+      "preset": "studio",
+      "visible": true,
+      "colors": [
+        "#e9effa",
+        "#fff4e9"
+      ]
+    },
+    "materials": {
+      "table": true,
+      "computer": true,
+      "papers": false,
+      "penHolder": true,
+      "fan": false,
+      "chairs": true,
+      "tableColor": "#8b5e3c"
+    },
+    "whiteboard": {
+      "title": "KEY POINTS",
+      "text": "Main idea goes here.\nSecond line goes here.",
+      "typingCps": 16,
+      "sound": true,
+      "highlights": [
+        {
+          "at": 5200,
+          "target": "Main idea",
+          "style": "marker",
+          "color": "#ffe16a",
+          "duration": 1800
+        }
+      ]
+    },
+    "audio": {
+      "backgroundAsset": "<uploaded-background-audio-assetId>",
+      "backgroundVolume": 0.12
+    },
+    "tts": {
+      "provider": "kokoro-js",
+      "endpoint": "/api/tts/kokoro",
+      "voice": "af_heart",
+      "speed": 1
+    },
+    "timelineActionExamples": [
+      {
+        "at": 0,
+        "type": "camera",
+        "target": "both",
+        "duration": 700
+      },
+      {
+        "at": 1000,
+        "type": "reaction",
+        "character": "left",
+        "reaction": "thinking",
+        "duration": 1800
+      },
+      {
+        "at": 2600,
+        "type": "speak",
+        "character": "left",
+        "duration": 3200,
+        "volume": 1
+      },
+      {
+        "at": 4000,
+        "type": "whiteboard",
+        "action": "open"
+      },
+      {
+        "at": 4300,
+        "type": "whiteboardType",
+        "text": "Important concept: hoisting",
+        "cps": 16,
+        "sound": true
+      },
+      {
+        "at": 5100,
+        "type": "highlight",
+        "target": "Important concept",
+        "style": "marker",
+        "color": "#ffe16a",
+        "duration": 1800
+      },
+      {
+        "at": 7000,
+        "type": "customize",
+        "character": "right",
+        "property": "faceStyle",
+        "value": "round"
+      },
+      {
+        "at": 9000,
+        "type": "fan",
+        "on": true,
+        "duration": 2200
+      },
+      {
+        "at": 12000,
+        "type": "camera",
+        "target": "left",
+        "zoom": 1.5,
+        "focusY": 0.375,
+        "duration": 900
+      },
+      {
+        "at": 15000,
+        "type": "stop"
+      }
+    ],
+    "timelineActionFieldExamples": {
+      "camera": {
+        "at": 2000,
+        "type": "camera",
+        "target": "right",
+        "zoom": 1.5,
+        "focusY": 0.5,
+        "duration": 850
+      },
+      "reaction": {
+        "at": 1000,
+        "type": "reaction",
+        "character": "left",
+        "reaction": "happy",
+        "duration": 1600
+      },
+      "speak": {
+        "at": 3000,
+        "type": "speak",
+        "character": "left",
+        "duration": 3500,
+        "volume": 1,
+        "assetId": "<optional-override-assetId>"
+      },
+      "whiteboard": {
+        "at": 4000,
+        "type": "whiteboard",
+        "action": "open"
+      },
+      "whiteboardType": {
+        "at": 4500,
+        "type": "whiteboardType",
+        "text": "Text to type",
+        "cps": 16,
+        "sound": true
+      },
+      "highlight": {
+        "at": 5200,
+        "type": "highlight",
+        "target": "Text to focus",
+        "style": "underline",
+        "color": "#ffe16a",
+        "duration": 1800
+      },
+      "customize": {
+        "at": 7000,
+        "type": "customize",
+        "character": "left",
+        "property": "faceStyle",
+        "value": "chibi"
+      },
+      "fan": {
+        "at": 8000,
+        "type": "fan",
+        "on": true,
+        "duration": 2000
+      },
+      "stop": {
+        "at": 15000,
+        "type": "stop"
+      }
+    },
+    "highlightStyles": [
+      "marker",
+      "underline",
+      "box",
+      "pulse",
+      "spotlight",
+      "arrow",
+      "sweep"
+    ],
+    "camera": {
+      "targets": [
+        "left",
+        "right",
+        "both"
+      ],
+      "zoomExample": {
+        "at": 12000,
+        "type": "camera",
+        "target": "left",
+        "zoom": 1.5,
+        "focusY": 0.375,
+        "duration": 900
+      },
+      "recommendedZoomRange": [
+        1.35,
+        1.6
+      ],
+      "recommendedFocusYRange": [
+        0.2,
+        0.75
+      ]
+    },
+    "apiExamples": {
+      "validate": {
+        "method": "POST",
+        "path": "/api/validate",
+        "body": "<scene JSON>"
+      },
+      "preview": {
+        "method": "POST",
+        "path": "/api/preview?atMs=7500",
+        "body": "<scene JSON>"
+      },
+      "uploadAudio": {
+        "method": "POST",
+        "path": "/api/assets/audio",
+        "formField": "audio"
+      },
+      "tts": {
+        "method": "POST",
+        "path": "/api/tts/kokoro",
+        "body": {
+          "text": "Hello there.",
+          "voice": "af_heart",
+          "speed": 1
+        }
+      },
+      "render": {
+        "method": "POST",
+        "path": "/api/renders",
+        "body": "<scene JSON>"
+      },
+      "listRenders": {
+        "method": "GET",
+        "path": "/api/renders"
+      },
+      "renderStatus": {
+        "method": "GET",
+        "path": "/api/renders/:id"
+      },
+      "cancelRender": {
+        "method": "DELETE",
+        "path": "/api/renders/:id"
+      },
+      "downloadRender": {
+        "method": "GET",
+        "path": "/api/renders/:id/download"
+      },
+      "profiles": {
+        "method": "GET",
+        "path": "/api/profiles"
+      },
+      "health": {
+        "method": "GET",
+        "path": "/api/health"
+      }
+    },
+    "environmentVariableExamples": {
+      "HOST": "127.0.0.1",
+      "PORT": "3030",
+      "FFMPEG_PATH": "/usr/bin/ffmpeg",
+      "FFMPEG_PRESET": "medium",
+      "MAX_RENDER_MINUTES": "30",
+      "MAX_UPLOAD_MB": "100"
+    },
+    "schemaActions": {
+      "supportedActionTypes": [
+        "reaction",
+        "gesture",
+        "camera",
+        "speak",
+        "fan",
+        "whiteboard",
+        "whiteboardType",
+        "customize",
+        "highlight",
+        "stop",
+        "whiteboardImage",
+        "backgroundImage"
+      ],
+      "gesture": {
+        "at": 2500,
+        "type": "gesture",
+        "character": "center",
+        "gesture": "point",
+        "duration": 1200
+      },
+      "whiteboardImage": {
+        "at": 6000,
+        "type": "whiteboardImage",
+        "src": "https://example.com/diagram.png",
+        "duration": 4000
+      },
+      "backgroundImage": {
+        "at": 0,
+        "type": "backgroundImage",
+        "src": "https://example.com/studio-background.jpg",
+        "duration": 30000
+      },
+      "speakAudioFields": {
+        "at": 3000,
+        "type": "speak",
+        "character": "left",
+        "duration": 3500,
+        "volume": 1,
+        "audio": "uploads/narration.wav",
+        "audioSrc": "uploads/narration.wav",
+        "assetId": "<uploaded-audio-assetId>"
+      },
+      "characterSlots": [
+        "left",
+        "right",
+        "center"
+      ],
+      "characterCountAllowed": [
+        1,
+        2,
+        3
+      ],
+      "characterExtraFields": {
+        "standing": true,
+        "voiceAsset": "<uploaded-audio-assetId>"
+      },
+      "validationNotes": [
+        "Timeline timestamps are milliseconds and must be non-negative.",
+        "The server duration must be positive and no greater than MAX_RENDER_MINUTES.",
+        "The validator checks six-digit hex colors for hairColor, skinColor, shirtColor, pantsColor and eyeColor.",
+        "backgroundImage and whiteboardImage require a non-empty src string.",
+        "speak accepts optional character left/right/center, reaction, audio string and audioSrc string.",
+        "A gesture action is accepted by the schema, but its exact gesture names/fields are not defined in the provided validator snippet."
+      ]
+    }
+  },
+  "schemaCompatibility": {
+    "supportedCharacterSlots": [
+      "left",
+      "right",
+      "center"
+    ],
+    "supportedCharacterCount": [
+      1,
+      2,
+      3
+    ],
+    "supportedTimelineActions": [
+      "reaction",
+      "gesture",
+      "camera",
+      "speak",
+      "fan",
+      "whiteboard",
+      "whiteboardType",
+      "customize",
+      "highlight",
+      "stop",
+      "whiteboardImage",
+      "backgroundImage"
+    ],
+    "colorFieldsValidated": [
+      "hairColor",
+      "skinColor",
+      "shirtColor",
+      "pantsColor",
+      "eyeColor"
+    ],
+    "imageActionsRequireSrc": true,
+    "schemaSource": "User-provided validateScene schema snippet"
+  }
+}
