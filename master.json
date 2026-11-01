@@ -40,6 +40,11 @@
     "right",
     "center"
   ],
+   "visibleCharactersGender": [
+    "male",
+    "fenale",
+    "none"
+  ],
   "characters": {
     "left": {
       "name": "Presenter One",
@@ -57,7 +62,8 @@
       "facialHair": "none",
       "accessory": "none",
       "facing": 1,
-      "voiceAsset": null
+      "voiceAsset": null,
+      "gender": "female"
     },
     "right": {
       "name": "Presenter Two",
@@ -75,7 +81,8 @@
       "facialHair": "none",
       "accessory": "none",
       "facing": -1,
-      "voiceAsset": null
+      "voiceAsset": null,
+      "gender": "male"
     },
     "center": {
       "name": "Host Alex",
@@ -94,7 +101,8 @@
       "accessory": "none",
       "facing": 1,
       "standing": true,
-      "voiceAsset": null
+      "voiceAsset": null,
+      "gender": "female"
     }
   },
   "background": {
@@ -112,24 +120,23 @@
     "penHolder": true,
     "fan": true,
     "chairs": true,
-    "tableColor": "#a77954"
+    "tableColor": "#a77954",
+    "anyDynamic": true
   },
   "whiteboard": {
     "title": "KEY POINTS",
     "text": "Write the explanation here.\n\nImportant phrases can be highlighted with timeline actions.",
     "typingCps": 16,
     "sound": true,
-    "highlights": []
+    "highlights": [],
+    "speak": true,
+    "left": false,
+    "right": true,
+    "center": false
   },
   "audio": {
     "backgroundAsset": null,
     "backgroundVolume": 0.14
-  },
-  "tts": {
-    "provider": "kokoro-js",
-    "endpoint": "/api/tts/kokoro",
-    "voice": "af_heart",
-    "speed": 1
   },
   "timeline": [
     {
@@ -156,6 +163,8 @@
       "at": 1400,
       "type": "speak",
       "character": "left",
+      "text": "hey",
+      "gender": "female",
       "duration": 4000,
       "volume": 1
     },
@@ -169,7 +178,9 @@
       "type": "whiteboardType",
       "text": "Important concept:\nBindings first, values when assigned.",
       "cps": 16,
-      "sound": true
+      "sound": true,
+      "character": "right",
+      "gender": "female",
     },
     {
       "at": 3100,
@@ -310,7 +321,8 @@
       "pulse",
       "spotlight",
       "arrow",
-      "sweep"
+      "sweep",
+      "dynamic"
     ],
     "timelineActionExamples": {
       "reaction": {
@@ -330,6 +342,8 @@
         "at": 3000,
         "type": "speak",
         "character": "left",
+        "text": "hey",
+        "gender": "female",
         "duration": 3500,
         "volume": 1
       },
@@ -343,7 +357,9 @@
         "type": "whiteboardType",
         "text": "Text to type",
         "cps": 16,
-        "sound": true
+        "sound": true,
+        "character": "left",
+        "gender": "female"
       },
       "highlight": {
         "at": 5200,
@@ -479,7 +495,8 @@
       "facialHair": "none",
       "accessory": "none",
       "facing": 1,
-      "voiceAsset": "<uploaded-audio-assetId>"
+      "voiceAsset": "<uploaded-audio-assetId>",
+      "gender": "female"
     },
     "characterAllowedValues": {
       "faceStyle": [
@@ -558,6 +575,8 @@
       "text": "Main idea goes here.\nSecond line goes here.",
       "typingCps": 16,
       "sound": true,
+      "character": "left",
+      "gender": "female",
       "highlights": [
         {
           "at": 5200,
@@ -597,6 +616,8 @@
         "type": "speak",
         "character": "left",
         "duration": 3200,
+        "text": "hey",
+        "gender": "female",
         "volume": 1
       },
       {
@@ -667,7 +688,9 @@
         "character": "left",
         "duration": 3500,
         "volume": 1,
-        "assetId": "<optional-override-assetId>"
+        "assetId": "<optional-override-assetId>",
+        "text": "hey",
+        "gender": "male",
       },
       "whiteboard": {
         "at": 4000,
@@ -679,7 +702,10 @@
         "type": "whiteboardType",
         "text": "Text to type",
         "cps": 16,
-        "sound": true
+        "sound": true,
+        "character": "left",
+        "text": "hey",
+        "gender": "male",
       },
       "highlight": {
         "at": 5200,
@@ -828,13 +854,17 @@
         "at": 6000,
         "type": "whiteboardImage",
         "src": "https://example.com/diagram.png",
-        "duration": 4000
+        "duration": 4000,
+        "textPrompt": "generate topic related image",
+        "generate": true
       },
       "backgroundImage": {
         "at": 0,
         "type": "backgroundImage",
         "src": "https://example.com/studio-background.jpg",
-        "duration": 30000
+        "duration": 30000,
+        "textPrompt": "generate topic related image",
+        "generate": true
       },
       "speakAudioFields": {
         "at": 3000,
