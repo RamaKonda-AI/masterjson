@@ -635,7 +635,8 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^[a-zA-Z0-9_-]{1,64}$"
+          "pattern": "^[a-zA-Z0-9_-]{1,64}$",
+          "description": "Stable ID of a top-level scene element. Highlight, emphasis and clear timeline events in this same scene may target this exact ID."
         },
         "type": {
           "type": "string",
@@ -1379,7 +1380,8 @@
         },
         "target": {
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "description": "Required for highlight, emphasis and clear. Must exactly match (case-sensitive) a top-level element id in the same scene's elements[] array. Drawing command IDs, diagram item IDs, narration IDs, labels, scene IDs and IDs from other scenes are not valid targets. Enforced by Scene Studio runtime validation."
         },
         "color": {
           "type": "string",
