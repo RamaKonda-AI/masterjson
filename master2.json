@@ -1,0 +1,1194 @@
+{
+  "version": "1.0",
+  "meta": {
+    "title": "Scene Studio Master Reference — Parameter Showcase",
+    "description": "Schema-valid reference document demonstrating responsive whiteboard layouts, every element family, canvas drawing commands, diagrams, AI image generation, narration, timeline events, transitions, ACE-Step music, Filebin delivery and platform output.",
+    "language": "en-US",
+    "author": "Scene Studio"
+  },
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "format": "mp4",
+    "videoCodec": "libx264",
+    "quality": 20,
+    "preset": "medium",
+    "audioBitrate": "192k",
+    "profile": "youtube-shorts",
+    "sampleRate": 48000,
+    "delivery": {
+      "filebin": {
+        "enabled": true,
+        "binPrefix": "scene-studio",
+        "binName": "web-request-master-demo"
+      }
+    }
+  },
+  "avatar": {
+    "enabled": true,
+    "gender": "man",
+    "hairstyle": "side-part",
+    "faceShape": "oval",
+    "eyeStyle": "almond",
+    "hairColor": "#241914",
+    "hairHighlightColor": "#6b4634",
+    "hairShadowColor": "#17110f",
+    "skinTone": "#c98d6b",
+    "eyeColor": "#302016",
+    "glasses": "round",
+    "glassesColor": "#243a51",
+    "beard": "stubble",
+    "clothing": "suit",
+    "clothingColor": "#23476d",
+    "secondaryClothingColor": "#f6f8fb",
+    "defaultExpression": "explaining",
+    "position": {
+      "anchor": "bottom-right",
+      "size": 0.21,
+      "padding": 0.04
+    },
+    "accentColor": "#2f83d5",
+    "backgroundStart": "#eff6ff",
+    "backgroundEnd": "#a9c5e6",
+    "motionStyle": "lively",
+    "gestureStyle": "presenter",
+    "earrings": "none"
+  },
+  "audio": {
+    "backgroundMusic": {
+      "enabled": true,
+      "provider": "ace-step-1.5",
+      "apiMode": "cpp-lm-synth",
+      "prompt": "Premium educational technology underscore, warm felt piano, soft plucked synth, subtle brushed percussion, light pulsing bass, curious but reassuring, instrumental, no vocals, no dramatic impacts",
+      "lmModel": "acestep-5Hz-lm-0.6B-Q8_0",
+      "synthModel": "acestep-v15-turbo-Q4_K_M",
+      "lmBackend": "pt",
+      "instrumental": true,
+      "durationSec": 60,
+      "outputFormat": "mp3",
+      "inferenceSteps": 8,
+      "thinking": true,
+      "volume": 0.075,
+      "loop": true,
+      "fadeInMs": 1400,
+      "fadeOutMs": 2200,
+      "seed": 24680,
+      "fileName": "web-request-educational-bed",
+      "lyricsOptimizer": false,
+      "sampleRate": 44100,
+      "bpm": 96,
+      "format": "mp3"
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook-intro",
+      "title": "A web page is a journey, not a single download",
+      "durationMs": 9000,
+      "background": "#f4f8fd",
+      "transition": {
+        "type": "fade",
+        "durationMs": 500,
+        "easing": "easeInOutCubic"
+      },
+      "whiteboard": {
+        "mode": "text",
+        "background": "#ffffff",
+        "grid": false,
+        "gridColor": "#edf1f6",
+        "layout": {
+          "mode": "hybrid",
+          "padding": 0.055,
+          "gap": 0.022,
+          "columns": 1,
+          "avoidOverlap": true,
+          "avoidAvatar": true,
+          "minCellHeight": 80
+        }
+      },
+      "elements": [
+        {
+          "id": "hook-title",
+          "type": "text",
+          "text": "What happens after you tap a link?",
+          "x": 0.07,
+          "y": 0.13,
+          "w": 0.82,
+          "h": 0.17,
+          "zIndex": 2,
+          "startMs": 0,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "800",
+          "fontSize": 76,
+          "minFontSize": 38,
+          "color": "#173451",
+          "align": "left",
+          "valign": "middle",
+          "effect": "slide-down",
+          "effectDurationMs": 850,
+          "bold": true,
+          "easing": "easeOutQuint",
+          "layout": {
+            "mode": "manual",
+            "allowOverlap": false,
+            "allowAvatarOverlap": false
+          }
+        },
+        {
+          "id": "hook-card",
+          "type": "card",
+          "text": "Your browser and a server exchange several messages in milliseconds.",
+          "x": 0.07,
+          "y": 0.36,
+          "w": 0.8,
+          "h": 0.17,
+          "zIndex": 1,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "600",
+          "fontSize": 48,
+          "minFontSize": 25,
+          "color": "#21496c",
+          "fill": "#edf6ff",
+          "stroke": "#c8def2",
+          "strokeWidth": 2,
+          "radius": 26,
+          "align": "left",
+          "valign": "middle",
+          "effect": "pop",
+          "effectDurationMs": 720,
+          "easing": "easeOutBack"
+        },
+        {
+          "id": "hook-pill",
+          "type": "shape",
+          "shape": "roundRect",
+          "x": 0.07,
+          "y": 0.63,
+          "w": 0.4,
+          "h": 0.09,
+          "fill": "#e9f7ef",
+          "stroke": "#bfe5ce",
+          "strokeWidth": 2,
+          "radius": 25,
+          "text": "Let us follow the request",
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "700",
+          "fontSize": 30,
+          "minFontSize": 18,
+          "color": "#1c6846",
+          "align": "center",
+          "valign": "middle",
+          "effect": "fade",
+          "effectDurationMs": 550,
+          "layout": {
+            "mode": "manual",
+            "allowOverlap": true
+          }
+        },
+        {
+          "id": "hook-equation",
+          "type": "equation",
+          "text": "tap → request → response",
+          "x": 0.08,
+          "y": 0.77,
+          "w": 0.77,
+          "h": 0.08,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "800",
+          "fontSize": 42,
+          "minFontSize": 23,
+          "color": "#325e8c",
+          "align": "center",
+          "valign": "middle",
+          "effect": "slide-up",
+          "effectDurationMs": 650
+        }
+      ],
+      "timeline": {
+        "events": [
+          {
+            "type": "highlight",
+            "atMs": 1000,
+            "durationMs": 1100,
+            "target": "hook-title",
+            "style": "underline",
+            "color": "#f1a83b",
+            "easing": "easeOutCubic"
+          },
+          {
+            "type": "expression",
+            "atMs": 1600,
+            "durationMs": 1200,
+            "value": "surprised"
+          },
+          {
+            "type": "pointer",
+            "atMs": 3000,
+            "durationMs": 850,
+            "from": {
+              "x": 0.12,
+              "y": 0.55
+            },
+            "to": {
+              "x": 0.58,
+              "y": 0.68
+            },
+            "color": "#2b83cf",
+            "easing": "easeInOutCubic"
+          },
+          {
+            "type": "emphasis",
+            "atMs": 4700,
+            "durationMs": 900,
+            "target": "hook-equation",
+            "effect": "pulse",
+            "easing": "easeOutBack"
+          },
+          {
+            "type": "clear",
+            "atMs": 6100,
+            "durationMs": 0,
+            "target": "hook-title"
+          },
+          {
+            "type": "camera",
+            "atMs": 7100,
+            "durationMs": 1000,
+            "center": {
+              "x": 0.5,
+              "y": 0.48
+            },
+            "zoomFrom": 1.0,
+            "zoomTo": 1.08,
+            "easing": "easeInOutSine"
+          }
+        ]
+      },
+      "audio": {
+        "narration": [
+          {
+            "id": "hook-line-1",
+            "text": "When you tap a link, the page does not simply appear.",
+            "speed": 0.98,
+            "volume": 1.0,
+            "expression": "surprised",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          },
+          {
+            "id": "hook-line-2",
+            "text": "Your browser asks another computer for the information, then builds the page from the answer.",
+            "speed": 0.98,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          }
+        ],
+        "soundEffects": [
+          {
+            "src": "soft-pop.wav",
+            "startMs": 1250,
+            "volume": 0.28
+          }
+        ]
+      }
+    },
+    {
+      "id": "request-flow",
+      "title": "Five steps behind a web request",
+      "durationMs": 11000,
+      "background": "#f5f8fc",
+      "transition": {
+        "type": "wipe-left",
+        "durationMs": 520,
+        "easing": "easeOutCubic"
+      },
+      "whiteboard": {
+        "mode": "text",
+        "background": "#ffffff",
+        "grid": false,
+        "layout": {
+          "mode": "auto",
+          "padding": 0.06,
+          "gap": 0.025,
+          "columns": 1,
+          "avoidOverlap": true,
+          "avoidAvatar": true
+        }
+      },
+      "elements": [
+        {
+          "id": "flow-heading",
+          "type": "text",
+          "text": "The request journey",
+          "x": 0.07,
+          "y": 0.07,
+          "w": 0.84,
+          "h": 0.11,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "800",
+          "fontSize": 66,
+          "minFontSize": 32,
+          "color": "#193b5d",
+          "effect": "fade",
+          "effectDurationMs": 650,
+          "easing": "easeOutCubic"
+        },
+        {
+          "id": "request-diagram",
+          "type": "diagram",
+          "x": 0.075,
+          "y": 0.22,
+          "w": 0.82,
+          "h": 0.62,
+          "zIndex": 1,
+          "effect": "fade",
+          "effectDurationMs": 900,
+          "diagram": {
+            "layout": "flow",
+            "direction": "vertical",
+            "columns": 1,
+            "gap": 0.025,
+            "connectors": true,
+            "connectorColor": "#93aac4",
+            "connectorWidth": 3,
+            "staggerMs": 180,
+            "items": [
+              {
+                "id": "step-dns",
+                "title": "1 · Find the server",
+                "label": "DNS",
+                "description": "Turn the domain name into an IP address.",
+                "fill": "#edf5ff",
+                "stroke": "#c7dcf6",
+                "accent": "#3279c7",
+                "textColor": "#173b62",
+                "descriptionColor": "#49647f",
+                "titleSize": 31,
+                "descriptionSize": 21,
+                "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif"
+              },
+              {
+                "id": "step-connect",
+                "title": "2 · Connect securely",
+                "label": "TCP / TLS",
+                "description": "Set up the connection and encryption.",
+                "fill": "#ecf8f1",
+                "stroke": "#c5e8d2",
+                "accent": "#28986b",
+                "textColor": "#164d38",
+                "descriptionColor": "#47705d",
+                "titleSize": 31,
+                "descriptionSize": 21,
+                "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif"
+              },
+              {
+                "id": "step-request",
+                "title": "3 · Send the request",
+                "label": "HTTP",
+                "description": "Ask for a page, image, or data.",
+                "fill": "#fff5e8",
+                "stroke": "#f1dfc1",
+                "accent": "#d88b2d",
+                "textColor": "#68451c",
+                "descriptionColor": "#826342",
+                "titleSize": 31,
+                "descriptionSize": 21,
+                "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif"
+              },
+              {
+                "id": "step-response",
+                "title": "4 · Receive the response",
+                "label": "Response",
+                "description": "The server sends status, headers, and content.",
+                "fill": "#f6efff",
+                "stroke": "#ded0f5",
+                "accent": "#8861c6",
+                "textColor": "#44306b",
+                "descriptionColor": "#6c5b8b",
+                "titleSize": 31,
+                "descriptionSize": 21,
+                "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif"
+              },
+              {
+                "id": "step-render",
+                "title": "5 · Render the page",
+                "label": "Browser",
+                "description": "The browser lays out and paints what you see.",
+                "fill": "#fff0f1",
+                "stroke": "#f4cfd3",
+                "accent": "#d45e6a",
+                "textColor": "#6f3039",
+                "descriptionColor": "#8a5961",
+                "titleSize": 31,
+                "descriptionSize": 21,
+                "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif"
+              }
+            ]
+          }
+        },
+        {
+          "id": "flow-note",
+          "type": "text",
+          "text": "Each step has a job. Together, they create the page.",
+          "x": 0.08,
+          "y": 0.87,
+          "w": 0.77,
+          "h": 0.07,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "600",
+          "fontSize": 32,
+          "minFontSize": 20,
+          "color": "#4b627b",
+          "align": "center",
+          "effect": "slide-up",
+          "effectDurationMs": 500
+        }
+      ],
+      "timeline": {
+        "events": [
+          {
+            "type": "highlight",
+            "atMs": 1900,
+            "durationMs": 1300,
+            "target": "request-diagram",
+            "style": "outline",
+            "color": "#2f83d5"
+          },
+          {
+            "type": "pointer",
+            "atMs": 3500,
+            "durationMs": 900,
+            "from": {
+              "x": 0.12,
+              "y": 0.31
+            },
+            "to": {
+              "x": 0.79,
+              "y": 0.61
+            },
+            "color": "#e39b30"
+          },
+          {
+            "type": "expression",
+            "atMs": 6500,
+            "durationMs": 1400,
+            "value": "explaining"
+          },
+          {
+            "type": "camera",
+            "atMs": 8200,
+            "durationMs": 1100,
+            "center": {
+              "x": 0.5,
+              "y": 0.54
+            },
+            "zoomFrom": 1.0,
+            "zoomTo": 1.12,
+            "easing": "easeOutCubic"
+          }
+        ]
+      },
+      "audio": {
+        "narration": [
+          {
+            "id": "flow-line-1",
+            "text": "First, DNS helps the browser find the server that owns the website.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          },
+          {
+            "id": "flow-line-2",
+            "text": "Next, the browser connects, sends an HTTP request, and receives a response.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          },
+          {
+            "id": "flow-line-3",
+            "text": "Finally, the browser turns the returned files into the page you can interact with.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "happy",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          }
+        ]
+      }
+    },
+    {
+      "id": "custom-drawing",
+      "title": "A request and response drawn step by step",
+      "durationMs": 11000,
+      "background": "#f4f8fc",
+      "transition": {
+        "type": "zoom",
+        "durationMs": 600,
+        "easing": "easeOutQuart"
+      },
+      "whiteboard": {
+        "mode": "text",
+        "background": "#ffffff",
+        "grid": true,
+        "gridColor": "#eaf0f7",
+        "layout": {
+          "mode": "hybrid",
+          "padding": 0.055,
+          "gap": 0.02,
+          "avoidOverlap": true,
+          "avoidAvatar": true
+        }
+      },
+      "elements": [
+        {
+          "id": "drawing-title",
+          "type": "text",
+          "text": "Watch the message travel",
+          "x": 0.07,
+          "y": 0.07,
+          "w": 0.84,
+          "h": 0.11,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "800",
+          "fontSize": 62,
+          "minFontSize": 34,
+          "color": "#173b5f",
+          "effect": "slide-down",
+          "effectDurationMs": 650
+        },
+        {
+          "id": "request-drawing",
+          "type": "drawing",
+          "x": 0.08,
+          "y": 0.23,
+          "w": 0.8,
+          "h": 0.58,
+          "zIndex": 2,
+          "startMs": 300,
+          "drawing": {
+            "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+            "staggerMs": 130,
+            "commandDurationMs": 650,
+            "layout": {
+              "mode": "manual",
+              "padding": 0.035,
+              "gap": 0.025,
+              "columns": 2,
+              "avoidOverlap": true
+            },
+            "commands": [
+              {
+                "op": "roundRect",
+                "id": "browser-node",
+                "x": 0.05,
+                "y": 0.22,
+                "w": 0.32,
+                "h": 0.3,
+                "fill": "#eaf3ff",
+                "stroke": "#3c7dc1",
+                "strokeWidth": 3,
+                "radius": 22,
+                "easing": "easeOutCubic"
+              },
+              {
+                "op": "text",
+                "id": "browser-label",
+                "x": 0.05,
+                "y": 0.22,
+                "w": 0.32,
+                "h": 0.3,
+                "text": "BROWSER",
+                "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+                "fontWeight": "800",
+                "fontSize": 32,
+                "minFontSize": 18,
+                "color": "#1b4b79",
+                "align": "center",
+                "allowOverlap": true
+              },
+              {
+                "op": "roundRect",
+                "id": "server-node",
+                "x": 0.63,
+                "y": 0.22,
+                "w": 0.32,
+                "h": 0.3,
+                "fill": "#eaf8f0",
+                "stroke": "#31966a",
+                "strokeWidth": 3,
+                "radius": 22
+              },
+              {
+                "op": "text",
+                "id": "server-label",
+                "x": 0.63,
+                "y": 0.22,
+                "w": 0.32,
+                "h": 0.3,
+                "text": "SERVER",
+                "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+                "fontWeight": "800",
+                "fontSize": 32,
+                "minFontSize": 18,
+                "color": "#1e6b4a",
+                "align": "center",
+                "allowOverlap": true
+              },
+              {
+                "op": "arrow",
+                "fromId": "browser-node",
+                "toId": "server-node",
+                "stroke": "#e49a32",
+                "strokeWidth": 4,
+                "headSize": 22
+              },
+              {
+                "op": "arrow",
+                "fromId": "server-node",
+                "toId": "browser-node",
+                "stroke": "#327fc6",
+                "strokeWidth": 3,
+                "headSize": 18
+              },
+              {
+                "op": "circle",
+                "id": "request-dot",
+                "x": 0.45,
+                "y": 0.1,
+                "w": 0.1,
+                "h": 0.1,
+                "fill": "#f2b34c",
+                "stroke": "#d68c24",
+                "strokeWidth": 2
+              },
+              {
+                "op": "ellipse",
+                "id": "response-orbit",
+                "x": 0.43,
+                "y": 0.7,
+                "w": 0.15,
+                "h": 0.08,
+                "fill": "none",
+                "stroke": "#6c8fb5",
+                "strokeWidth": 3
+              },
+              {
+                "op": "rect",
+                "id": "legend-swatch",
+                "x": 0.08,
+                "y": 0.86,
+                "w": 0.08,
+                "h": 0.06,
+                "fill": "#d9e9fb",
+                "stroke": "#3c7dc1",
+                "strokeWidth": 1.5
+              },
+              {
+                "op": "text",
+                "id": "legend-text",
+                "x": 0.19,
+                "y": 0.84,
+                "w": 0.7,
+                "h": 0.09,
+                "text": "Request goes out  ·  Response comes back",
+                "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+                "fontWeight": "600",
+                "fontSize": 24,
+                "minFontSize": 14,
+                "color": "#405a75",
+                "allowOverlap": false
+              }
+            ]
+          }
+        }
+      ],
+      "timeline": {
+        "events": [
+          {
+            "type": "highlight",
+            "atMs": 1700,
+            "durationMs": 1400,
+            "target": "request-drawing",
+            "style": "glow",
+            "color": "#f3b448"
+          },
+          {
+            "type": "pointer",
+            "atMs": 3600,
+            "durationMs": 1100,
+            "from": {
+              "x": 0.25,
+              "y": 0.5
+            },
+            "to": {
+              "x": 0.73,
+              "y": 0.5
+            },
+            "color": "#e49a32",
+            "easing": "easeInOutCubic"
+          },
+          {
+            "type": "emphasis",
+            "atMs": 5900,
+            "durationMs": 800,
+            "target": "request-drawing",
+            "effect": "pulse"
+          },
+          {
+            "type": "clear",
+            "atMs": 7900,
+            "durationMs": 0,
+            "target": "request-drawing"
+          }
+        ]
+      },
+      "audio": {
+        "narration": [
+          {
+            "id": "drawing-line-1",
+            "text": "Think of the browser as the customer and the server as the kitchen.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          },
+          {
+            "id": "drawing-line-2",
+            "text": "The request carries the order out. The response brings the result back.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "happy",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ai-illustration",
+      "title": "A generated illustration can clarify a complex concept",
+      "durationMs": 9000,
+      "background": "#f5f8fc",
+      "transition": {
+        "type": "crossfade",
+        "durationMs": 550,
+        "easing": "easeInOutSine"
+      },
+      "whiteboard": {
+        "mode": "text",
+        "background": "#ffffff",
+        "grid": false,
+        "layout": {
+          "mode": "auto",
+          "padding": 0.06,
+          "gap": 0.025,
+          "avoidOverlap": true,
+          "avoidAvatar": true
+        }
+      },
+      "elements": [
+        {
+          "id": "ai-image-heading",
+          "type": "text",
+          "text": "Visualize what words cannot show",
+          "x": 0.07,
+          "y": 0.07,
+          "w": 0.84,
+          "h": 0.1,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "800",
+          "fontSize": 58,
+          "minFontSize": 31,
+          "color": "#173b5f",
+          "effect": "fade",
+          "effectDurationMs": 600
+        },
+        {
+          "id": "browser-server-art",
+          "type": "image",
+          "x": 0.09,
+          "y": 0.21,
+          "w": 0.78,
+          "h": 0.54,
+          "fit": "contain",
+          "zIndex": 1,
+          "effect": "zoom",
+          "effectDurationMs": 950,
+          "easing": "easeOutBack",
+          "imageGeneration": {
+            "provider": "cloudflare-workers-ai",
+            "model": "@cf/black-forest-labs/flux-1-schnell",
+            "prompt": "A single clean educational 3D cartoon illustration showing a laptop browser sending a glowing data request to a friendly compact web server and receiving a response, visible two-way arrows represented by light trails, isolated on a bright pale blue background, scientifically coherent network concept, no text or labels.",
+            "style": "Premium educational 3D cartoon illustration with clean geometry, soft studio lighting and polished materials",
+            "negativePrompt": "text, letters, logos, watermark, duplicate computers, tangled cables, clutter, blurry edges",
+            "aspectRatio": "16:9",
+            "steps": 4,
+            "seed": 42108,
+            "fileName": "browser-server-request"
+          }
+        },
+        {
+          "id": "ai-image-caption",
+          "type": "card",
+          "text": "Use generated artwork for the big idea; use canvas text for exact labels.",
+          "x": 0.1,
+          "y": 0.79,
+          "w": 0.76,
+          "h": 0.1,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "600",
+          "fontSize": 32,
+          "minFontSize": 19,
+          "color": "#244c70",
+          "fill": "#eef6ff",
+          "stroke": "#c8def2",
+          "strokeWidth": 1.5,
+          "radius": 20,
+          "align": "center",
+          "valign": "middle",
+          "effect": "slide-up",
+          "effectDurationMs": 600
+        }
+      ],
+      "timeline": {
+        "events": [
+          {
+            "type": "highlight",
+            "atMs": 1600,
+            "durationMs": 1100,
+            "target": "ai-image-caption",
+            "style": "outline",
+            "color": "#3e92d2"
+          },
+          {
+            "type": "expression",
+            "atMs": 3200,
+            "durationMs": 1300,
+            "value": "happy"
+          },
+          {
+            "type": "camera",
+            "atMs": 5200,
+            "durationMs": 1000,
+            "center": {
+              "x": 0.5,
+              "y": 0.49
+            },
+            "zoomFrom": 1,
+            "zoomTo": 1.07
+          }
+        ]
+      },
+      "audio": {
+        "narration": [
+          {
+            "id": "image-line-1",
+            "text": "A useful picture can make an unfamiliar system easier to understand.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          },
+          {
+            "id": "image-line-2",
+            "text": "Generate the illustration for the concept, then draw precise labels separately.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          }
+        ]
+      }
+    },
+    {
+      "id": "split-board",
+      "title": "Combine a visual with a short explanation",
+      "durationMs": 10000,
+      "background": "#f5f8fc",
+      "transition": {
+        "type": "wipe-up",
+        "durationMs": 500,
+        "easing": "easeOutCubic"
+      },
+      "whiteboard": {
+        "mode": "split",
+        "background": "#ffffff",
+        "grid": false,
+        "media": {
+          "src": "data-flow.png",
+          "fit": "contain",
+          "side": "right",
+          "ratio": 0.48,
+          "padding": 0.035
+        },
+        "layout": {
+          "mode": "hybrid",
+          "padding": 0.05,
+          "gap": 0.02,
+          "avoidOverlap": true,
+          "avoidAvatar": true
+        }
+      },
+      "elements": [
+        {
+          "id": "split-title",
+          "type": "text",
+          "text": "One idea at a time",
+          "x": 0.055,
+          "y": 0.16,
+          "w": 0.4,
+          "h": 0.14,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "800",
+          "fontSize": 56,
+          "minFontSize": 29,
+          "color": "#1c3d5d",
+          "effect": "slide-left",
+          "effectDurationMs": 700
+        },
+        {
+          "id": "split-explanation",
+          "type": "card",
+          "text": "The left side explains the idea. The right side gives the eye a concrete example.",
+          "x": 0.055,
+          "y": 0.36,
+          "w": 0.4,
+          "h": 0.29,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "600",
+          "fontSize": 38,
+          "minFontSize": 23,
+          "color": "#2b4b6b",
+          "fill": "#f0f7ff",
+          "stroke": "#c9dff2",
+          "radius": 22,
+          "effect": "fade",
+          "effectDurationMs": 650
+        },
+        {
+          "id": "split-takeaway",
+          "type": "text",
+          "text": "Keep both sides spacious.",
+          "x": 0.06,
+          "y": 0.72,
+          "w": 0.38,
+          "h": 0.09,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "700",
+          "fontSize": 28,
+          "minFontSize": 18,
+          "color": "#31815f",
+          "effect": "fade",
+          "effectDurationMs": 450
+        }
+      ],
+      "timeline": {
+        "events": [
+          {
+            "type": "highlight",
+            "atMs": 2100,
+            "durationMs": 1500,
+            "target": "split-explanation",
+            "style": "marker",
+            "color": "#ffdf80"
+          },
+          {
+            "type": "pointer",
+            "atMs": 4300,
+            "durationMs": 900,
+            "from": {
+              "x": 0.19,
+              "y": 0.51
+            },
+            "to": {
+              "x": 0.75,
+              "y": 0.52
+            },
+            "color": "#2b83cf"
+          },
+          {
+            "type": "expression",
+            "atMs": 6900,
+            "durationMs": 1200,
+            "value": "thinking"
+          }
+        ]
+      },
+      "audio": {
+        "narration": [
+          {
+            "id": "split-line-1",
+            "text": "When an idea needs both words and a picture, use a split whiteboard.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          },
+          {
+            "id": "split-line-2",
+            "text": "Choose which side gets the larger share, and keep both areas uncluttered.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          }
+        ],
+        "backgroundMusic": {
+          "enabled": true,
+          "provider": "ace-step-1.5",
+          "apiMode": "cpp-lm-synth",
+          "prompt": "A short focused educational transition cue, soft marimba notes, gentle electronic pulse, light airy pads, instrumental only, no vocals",
+          "lmModel": "acestep-5Hz-lm-0.6B-Q8_0",
+          "synthModel": "acestep-v15-turbo-Q4_K_M",
+          "lmBackend": "pt",
+          "instrumental": true,
+          "durationSec": 10,
+          "outputFormat": "mp3",
+          "inferenceSteps": 8,
+          "thinking": true,
+          "volume": 0.045,
+          "loop": true,
+          "fadeInMs": 550,
+          "fadeOutMs": 800,
+          "seed": 9753,
+          "fileName": "split-scene-transition",
+          "lyricsOptimizer": false,
+          "sampleRate": 44100,
+          "bpm": 88,
+          "format": "mp3"
+        }
+      }
+    },
+    {
+      "id": "full-image-finale",
+      "title": "Full-frame illustration for a visual conclusion",
+      "durationMs": 10000,
+      "background": "#eef5fb",
+      "transition": {
+        "type": "fade",
+        "durationMs": 550,
+        "easing": "easeInOutCubic"
+      },
+      "whiteboard": {
+        "mode": "full-image",
+        "background": "#eef5fb",
+        "grid": false,
+        "media": {
+          "fit": "cover",
+          "imageGeneration": {
+            "provider": "cloudflare-workers-ai",
+            "model": "@cf/black-forest-labs/flux-2-klein-4b",
+            "prompt": "A visually elegant vertical educational 3D cartoon illustration of a web browser window connected to a cloud server through a flowing luminous data pathway, soft layered depth, clear large central shapes, bright premium blue and teal palette, empty negative space near the top for a title, no text or labels.",
+            "style": "Premium vertical educational 3D cartoon scene, refined lighting, soft shadows and uncluttered composition",
+            "negativePrompt": "text, letters, logos, watermark, clutter, photorealistic collage, distorted device screens",
+            "aspectRatio": "9:16",
+            "width": 576,
+            "height": 1024,
+            "seed": 85241,
+            "fileName": "web-request-full-frame"
+          }
+        }
+      },
+      "elements": [
+        {
+          "id": "final-overlay-title",
+          "type": "text",
+          "text": "A request becomes an experience",
+          "x": 0.08,
+          "y": 0.08,
+          "w": 0.78,
+          "h": 0.13,
+          "fontFamily": "Lato, \"Noto Sans\", \"DejaVu Sans\", sans-serif",
+          "fontWeight": "800",
+          "fontSize": 58,
+          "minFontSize": 30,
+          "color": "#173b5f",
+          "align": "center",
+          "effect": "fade",
+          "effectDurationMs": 750,
+          "layout": {
+            "mode": "manual",
+            "allowOverlap": true
+          }
+        }
+      ],
+      "timeline": {
+        "events": [
+          {
+            "type": "expression",
+            "atMs": 1200,
+            "durationMs": 1400,
+            "value": "happy"
+          },
+          {
+            "type": "emphasis",
+            "atMs": 3100,
+            "durationMs": 950,
+            "target": "final-overlay-title",
+            "effect": "pulse",
+            "easing": "easeOutBack"
+          },
+          {
+            "type": "camera",
+            "atMs": 5400,
+            "durationMs": 1200,
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "zoomFrom": 1,
+            "zoomTo": 1.04,
+            "easing": "easeInOutSine"
+          }
+        ]
+      },
+      "audio": {
+        "narration": [
+          {
+            "id": "final-line-1",
+            "text": "The browser coordinates the steps, but every step has a clear purpose.",
+            "speed": 1.0,
+            "volume": 1.0,
+            "expression": "explaining",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          },
+          {
+            "id": "final-line-2",
+            "text": "That is how a simple tap becomes a complete web experience.",
+            "speed": 0.98,
+            "volume": 1.0,
+            "expression": "happy",
+            "language": "en-US",
+            "voiceGender": "man",
+            "voiceMode": "random"
+          }
+        ]
+      }
+    }
+  ]
+}
