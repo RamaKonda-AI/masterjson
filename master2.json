@@ -2,7 +2,7 @@
   "version": "1.0",
   "meta": {
     "title": "Scene Studio Master Reference — Parameter Showcase",
-    "description": "Schema-valid reference document demonstrating responsive whiteboard layouts, every element family, canvas drawing commands, diagrams, AI image generation, narration, timeline events, transitions, ACE-Step music, Filebin delivery and platform output.",
+    "description": "Schema-valid reference document demonstrating responsive whiteboard layouts, every element family, canvas drawing commands, diagrams, AI image generation, narration, timeline events, transitions, ACE-Step music, Filebin delivery and platform output. Timeline cross-reference rule: highlight/emphasis/clear target must exactly match a top-level element id in the same scene elements[]; drawing command IDs and diagram item IDs are not valid event targets.",
     "language": "en-US",
     "author": "Scene Studio"
   },
